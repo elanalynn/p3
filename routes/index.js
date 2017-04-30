@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const posts = require('./posts');
+
+router.use('/posts', posts);
 
 router.get('/', function(req, res, next) {
-  res.send('Elana\'s API');
+  res.send('TODO: Documentation Link');
 });
 
 module.exports = router;
