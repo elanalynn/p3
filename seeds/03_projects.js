@@ -1,14 +1,14 @@
 exports.seed = function(knex) {
   return knex('projects').insert([
     {
-      title: 'test',
+      category: 'test',
+      collaborators: 'test',
       cover_src: 'test',
       description: 'test',
       technology: 'test',
       materials: 'test',
-      collaborators: 'test',
-      category: 'test',
-      date: 'test'
+      title: 'test',
+      year: 'test'
     }
   ]);
 }

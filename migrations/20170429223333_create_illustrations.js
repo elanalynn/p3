@@ -1,10 +1,11 @@
 exports.up = function(knex) {
     return knex.schema.createTable('illustrations', table => {
+        table.increments();
         table.string('title');
         table.string('src');
-        table.string('description');
         table.string('medium');
-        table.string('date');
+        table.string('thumb');
+        table.string('year');
     })
 };
 
