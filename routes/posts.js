@@ -16,12 +16,12 @@ router.get('/:id', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
   console.log(req.body);
-  api.createPost(req.body).then(id => {
-    console.log('hey');
-    res.send(id);
-  }).catch(err => {
-    console.log(err);
-  });
+  res.end();
+  // api.createPost(req.body).then(id => {
+  //   res.send(id);
+  // }).catch(err => {
+  //   console.log(err);
+  // });
 });
 
 router.patch('/:id', (req, res, next) => {
