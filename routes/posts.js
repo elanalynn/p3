@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const api = require('../db/posts');
+const showdown = require('../helpers/showdown');
 
 router.get('/', (req, res, next) => {
   api.getPosts().then(posts => {
+    console.log(showdown);
     res.send(posts);
   });
 });
