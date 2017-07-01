@@ -5,7 +5,7 @@ const showdown = require('../helpers/showdown');
 
 router.get('/', (req, res, next) => {
   api.getPosts().then(posts => {
-    console.log(showdown);
+    console.log(posts);
     res.send(posts);
   });
 });

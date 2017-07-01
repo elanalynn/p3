@@ -1,7 +1,9 @@
 # Logs
 logs
 *.log
+.env
 
+router.use('/posts', posts);
 # Runtime data
 pids
 *.pid

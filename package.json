@@ -13,7 +13,12 @@
     "express": "~4.13.1",
     "knex": "^0.13.0",
     "morgan": "~1.6.1",
+    "nodemailer": "^4.0.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "pg": "^6.1.5",
     "showdown": "^1.7.1"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
   }
 }
